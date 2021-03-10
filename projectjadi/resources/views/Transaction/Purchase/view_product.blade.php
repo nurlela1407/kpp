@@ -21,9 +21,9 @@
     $('#table-media-{{$id_count}}').on('click', 'tbody tr', function (e){
         e.preventDefault();
 
-        $('#id_raw_product {{$id_count}}').val($(this).find('td').html());
-        $('#name_raw_product {{$id_count}}').val($(this).find('td').next().next().html());
-        $('#price {{$id_count}}').val($(this).find('td').next().next().next().html());
+        $('#id_raw_product_{{$id_count}}').val($(this).find('td').html());
+        $('#name_raw_product_{{$id_count}}').val($(this).find('td').next().next().html());
+        $('#price_{{$id_count}}').val($(this).find('td').next().next().next().html());
 
     });
 
